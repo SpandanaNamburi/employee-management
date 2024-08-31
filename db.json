@@ -1,0 +1,67 @@
+{
+  "employees": [
+    {
+      "name": "Balu",
+      "companyName": "abc",
+      "email": "balu@abc.com",
+      "contactNo": "1234567890",
+      "designation": "Software Developer",
+      "avatarUrl": "../../../assets/avatars/av1.png",
+      "id": 1
+    },
+    {
+      "name": "Spandana",
+      "companyName": "abcd",
+      "email": "spandana@abc.com",
+      "contactNo": "1234567890",
+      "designation": "Technical Lead",
+      "avatarUrl": "../../../assets/avatars/av7.jfif",
+      "id": 3
+    },
+    {
+      "name": "Lilly",
+      "companyName": "amazon",
+      "email": "lilly@amazon.com",
+      "contactNo": "3333333333",
+      "designation": "Senior Software Developer",
+      "avatarUrl": "../../../assets/avatars/av10.png",
+      "id": 4
+    },
+    {
+      "name": "Bobby",
+      "companyName": "flipkart",
+      "email": "bobby@flipkart.com",
+      "contactNo": "5555555555",
+      "designation": "Manager",
+      "avatarUrl": "../../../assets/avatars/av6.jfif",
+      "id": 5
+    },
+    {
+      "name": "Rosy",
+      "companyName": "Oracle",
+      "email": "rosy@oracle.com",
+      "contactNo": "6666666666",
+      "designation": "Quality Assurance",
+      "avatarUrl": "../../../assets/avatars/av5.png",
+      "id": 6
+    },
+    {
+      "name": "Deep",
+      "companyName": "Infrrd",
+      "email": "deep@infrrd.com",
+      "contactNo": "7777777777",
+      "designation": "Senior Software Developer",
+      "avatarUrl": "../../../assets/avatars/av8.jfif",
+      "id": 7
+    },
+    {
+      "name": "PD",
+      "companyName": "epic",
+      "email": "pd@epic.com",
+      "contactNo": "8888888888",
+      "designation": "Technical Lead",
+      "avatarUrl": "../../../assets/avatars/av8.jfif",
+      "id": 8
+    }
+  ]
+}

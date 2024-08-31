@@ -1,0 +1,45 @@
+<div class="emp-container">
+  <div class="menu-bar">
+    <img src="../../assets/avatars/logo.png" alt="Logo" class="logo-img" />
+    <p>Overview</p>
+    <p (click)="toggleFilterBar()">Filters</p>
+    <p>My Account</p>
+    <div class="show-bottom">
+      <p>Get Help</p>
+      <p>Sign Out</p>
+    </div>
+  </div>
+
+  <div class="main-sec">
+    <div class="top-div">
+      <app-search (search)="onSearch($event)"></app-search>
+      <button mat-raised-button color="primary" class="m-r-10" (click)="openEmployeeForm()">Add New Employee</button>
+    </div>
+    
+    <div class="employee-list">
+      <div class="side-bar" *ngIf="isShowFilter">
+        <app-employee-filters (filter)="onFilter($event)" [employees]="employees"></app-employee-filters>
+      </div>
+      <div class="employee-cards">
+        <mat-card *ngFor="let employee of filteredEmployees" class="employee-card">
+          <mat-card-header class="card-header">
+            <div mat-card-avatar>
+              <img [src]="employee.avatarUrl" alt="Avatar" class="avatar-img" />
+            </div>
+            <mat-card-title>{{ employee.name }}</mat-card-title>
+            <mat-card-subtitle>{{ employee.designation }}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Company: {{ employee.companyName }}</p>
+            <p>Email: {{ employee.email }}</p>
+            <p>Contact: {{ employee.contactNo }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button color="primary" (click)="openEmployeeForm(employee)">View/Edit</button>
+            <button mat-button color="warn" (click)="onDeleteEmployee(employee.id)">Delete</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

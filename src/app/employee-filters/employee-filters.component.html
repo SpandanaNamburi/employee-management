@@ -1,0 +1,28 @@
+<div class="filter-container">
+  <mat-form-field>
+    <mat-label>Search by Name</mat-label>
+    <input matInput [(ngModel)]="filters.name" placeholder="Enter name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Search by Email</mat-label>
+    <input matInput [(ngModel)]="filters.email" placeholder="Enter email">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Designation</mat-label>
+    <mat-select [(ngModel)]="filters.designation">
+      <mat-option *ngFor="let designation of designations" [value]="designation">{{ designation }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Company</mat-label>
+    <mat-select [(ngModel)]="filters.company">
+      <mat-option *ngFor="let company of companies" [value]="company">{{ company }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit" (click)="onSubmit()">Submit</button>
+  <button mat-button type="button" (click)="onCancel()">Cancel</button>
+</div>
