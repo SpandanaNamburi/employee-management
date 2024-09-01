@@ -2,7 +2,7 @@
   <div class="menu-bar">
     <img src="../../assets/avatars/logo.png" alt="Logo" class="logo-img" />
     <p>Overview</p>
-    <p (click)="toggleFilterBar()">Filters</p>
+    <p (click)="toggleFilterBar()" matTooltip="click to open/close filters panel">Filters</p>
     <p>My Account</p>
     <div class="show-bottom">
       <p>Get Help</p>
@@ -13,7 +13,9 @@
   <div class="main-sec">
     <div class="top-div">
       <app-search (search)="onSearch($event)"></app-search>
-      <button mat-raised-button color="primary" class="m-r-10" (click)="openEmployeeForm()">Add New Employee</button>
+      <button mat-raised-button color="primary" class="m-r-10" (click)="openEmployeeForm()">
+        <mat-icon>add</mat-icon> New Employee
+      </button>
     </div>
     
     <div class="employee-list">

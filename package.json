@@ -8,7 +8,8 @@
     "test": "ng test",
     "start:json-server": "json-server --watch db.json",
     "start:angular": "ng serve",
-    "start": "concurrently \"npm run start:json-server\" \"npm run start:angular\""
+    "startc": "concurrently \"npm run start:json-server\" \"npm run start:angular\"",
+    "start": "ng serve"
   },
   "private": true,
   "dependencies": {

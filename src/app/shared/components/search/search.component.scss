@@ -1,3 +1,12 @@
 .search {
   display: inline-block;
+
+  .search-icon {
+    position: relative;
+    top: 10px;
+  }
+
+  .search-field {
+    width: 350px;
+  }
 }

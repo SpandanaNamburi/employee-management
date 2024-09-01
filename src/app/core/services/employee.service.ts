@@ -8,7 +8,10 @@ import { CoreUtils } from "../utils/core-utils";
   providedIn: "root"
 })
 export class EmplyeeService {
-  public apiUrl = "http://localhost:3000/employees";
+  // For json-server in local
+  // public apiUrl = "http://localhost:3000/employees";
+  // Mock API online
+  public apiUrl = "https://66d3fe7b5b34bcb9ab3d6520.mockapi.io/api/v1/employees";
 
   public _util = new CoreUtils();
 
